@@ -16,7 +16,7 @@ const heroSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-12">
           <div className="col-span-7 place-self-center text-center sm:text-left">
             <h1 className="text-white mb-4 text-3xl sm:text-5xl lg:text-6xl font-extrabold">
-              <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#2D4978] via-[#560104] to-red-700">
+              <span>
                 Hola, visitante.
                 <br />
               </span>
@@ -37,14 +37,6 @@ const heroSection = () => {
                 repeat={Infinity}
               />
             </h1>
-            <div>
-              <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#2D4978] via-[#560104] to-red-700 hover:text-black text-white border border-white mt-3">
-                Button 1
-              </button>
-              <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-800 text-white border border-white mt-3">
-                Button 2
-              </button>
-            </div>
           </div>
           <div className="col-span-5 place-self-center mt-4 lg:mt-0">
             <div className="rounded-full w-[300px] h-[300px] lg:w-[500px] lg:h-[500px] relative">
