@@ -29,7 +29,7 @@ const heroSection = () => {
                   2000,
                   "Soy increible",
                   2000,
-                  "DEVELOP",
+                  "Mas inteligente que tu",
                   2000,
                 ]}
                 wrapper="span"
