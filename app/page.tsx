@@ -1,95 +1,53 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Link from "next/link";
+import styles from "../app/styles/home.module.css";
+import pstyles from "../app/styles/parallax-stars.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <div className={styles.container}>
+      <nav className={styles.nav}>
+        <Link href="#home">Rocky Memories</Link>
+        <Link href="#about">Sobre el proyecto</Link>
+        <Link href="#team">Equipo de trabajo</Link>
+        <Link href="#development">Desarrollo del proyecto</Link>
+        <Link href="#technologies">Tecnologias</Link>
+        <Link href="#gallery">Galeria</Link>
+        <Link href="#contact">Contacto</Link>
+      </nav>
+      <div id="stars" className={pstyles.stars}></div>
+      <div id="stars2" className={pstyles.stars2}></div>
+      <div id="stars3" className={pstyles.stars3}></div>
+      <section id="home" className={styles.section}>
+        <h1>Rocky Memories</h1>
+      </section>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section id="about" className={styles.section}>
+        <h2>Sobre el proyecto</h2>
+      </section>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      <section id="team" className={styles.section}>
+        <h2>Equipo de trabajo</h2>
+      </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+      <section id="development" className={styles.section}>
+        <h2>Desarrollo del proyecto</h2>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
+      <section id="technologies" className={styles.section}>
+        <h2>Tecnologias</h2>
+      </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+      <section id="gallery" className={styles.section}>
+        <h2>Galeria</h2>
+      </section>
+
+      <section id="contact" className={styles.section}>
+        <h2>Contacto</h2>
+      </section>
+
+      <footer className={styles.footer}>
+        <p>&copy; 2024 - Rocky Memories</p>
+      </footer>
+    </div>
+  );
 }
