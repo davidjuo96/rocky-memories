@@ -1,0 +1,61 @@
+/* styles/Home.module.css */
+.container {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.nav {
+  background-color: #444;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 40;
+  width: 100%;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    flex-direction: column; /* Cambia la dirección del flexbox a columna en pantallas pequeñas */
+    align-items: center; /* Centra los elementos en el eje transversal */
+  }
+
+  .nav a {
+    width: 100%; /* Hace que los enlaces ocupen el 100% del ancho */
+    display: block; /* Hace que cada enlace sea un bloque para llenar toda la anchura disponible */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total del enlace */
+    margin-bottom: 10px; /* Añade un margen inferior para separar los enlaces */
+  }
+
+  .section {
+    margin-top: 120px; /* Ajusta el margen superior para evitar que el contenido se solape con la barra de navegación fija */
+  }
+}
